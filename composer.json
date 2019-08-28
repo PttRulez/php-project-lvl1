@@ -1,0 +1,17 @@
+{
+    "name": "pttrulez/igri",
+    "description": "igri razuma yo",
+    "type": "project",
+    "license": "mit",
+    "bin": [
+	"bin/brain-games"
+	],
+    "authors": [
+        {
+            "name": "Aleksandr",
+            "email": "sashfem@mail.ru"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
