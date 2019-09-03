@@ -19,7 +19,11 @@
     "autoload": {
         "files": ["src/cli.php"],
         "psr-4": {
+<<<<<<< HEAD
             "Php\\Package\\": "src"
+=======
+            "Php\\Package\\": "src",
+>>>>>>> 6487b25e6e4d62c9afe50319768149cb61110a9c
         }
     }
 }
