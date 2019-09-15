@@ -2,6 +2,7 @@
 
 /**
  * PHP version 7
+ *
  * @category Hexlet_Lesson
  * @package  Braingames
  * @author   Aleksandr Petrov <sashafem@mail.ru>
@@ -18,7 +19,6 @@ use function cli\line;
  *
  * @return void
  */
-
 function run()
 {
     line('Welcome to the Brain Game!');

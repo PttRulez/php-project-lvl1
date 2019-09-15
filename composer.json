@@ -7,10 +7,7 @@
 	    "bin/brain-games"
 	],
     "scripts": {
-        "phpcs": "vendor/bin/phpcs",
-        "install-codestandards": [
-            "Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin::run"
-        ]
+        "phpcs": "vendor/bin/phpcs"
     },
     "authors": [
         {
