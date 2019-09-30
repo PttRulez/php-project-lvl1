@@ -1,6 +1,6 @@
 # php-project-lvl1 description
 
-https://asciinema.org/a/Maoi2tZUEb0bPyOexmFo9sFwy
+https://asciinema.org/a/ygkfcu5NfqSoqIyr1ZIZcvIm7
 
 [![Build Status](https://travis-ci.org/PttRulez/php-project-lvl1.svg?branch=master)](https://travis-ci.org/PttRulez/php-project-lvl1)
 
