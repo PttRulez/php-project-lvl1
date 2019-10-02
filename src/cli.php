@@ -13,6 +13,7 @@
 namespace BrainGames\Cli;
 
 use function cli\line;
+use Functions;
 
 /**
  * Define template file.
@@ -22,6 +23,16 @@ use function cli\line;
 function run()
 {
     line('Welcome to the Brain Game!');
-    $name = \cli\prompt('May I have your name?');
-    line("Hello, %s!", $name);
+    $name = Functions\askName();
+    Functions\sayHello($name);
+}
+
+function runEven()
+{
+    line('Welcome to the Brain Game!');
+    line('Answer "yes" if number even otherwise answer "no"');
+    $name = Functions\askName();
+    Functions\sayHello($name);
+
+    Functions\runEvenGame($name);
 }
