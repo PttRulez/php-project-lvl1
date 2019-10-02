@@ -18,7 +18,6 @@ use function cli\prompt;
 function askName()
 {
     return prompt('May I have your name?');
-
 }
 
 function sayHello($name)
@@ -28,13 +27,13 @@ function sayHello($name)
 
 function runEvenGame($name)
 {
-    for ($i=0; $i < 3; $i++) {
+    for ($i = 0; $i < 3; $i++) {
         $number = rand();
         line("Question: %s", $number);
         $answer = \cli\prompt('Your answer');
         $odd =  ($number % 2 == 0) ? true : false;
 
-        if(($answer == "yes" && $odd == true) || ($answer == "no" && $odd == false)) {
+        if (($answer == "yes" && $odd == true) || ($answer == "no" && $odd == false)) {
             line("Correct!");
         } else {
             $correctAnswer = ($odd == true) ? 'yes' : 'no';

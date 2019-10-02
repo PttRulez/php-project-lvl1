@@ -12,8 +12,9 @@
 
 namespace BrainGames\Cli;
 
-use function cli\line;
 use Functions;
+
+use function cli\line;
 
 /**
  * Define template file.
