@@ -37,3 +37,13 @@ function runEven()
 
     Functions\runEvenGame($name);
 }
+
+function runCalc()
+{
+    line('Welcome to the Brain Games!');
+    line('What is the result of the expression?');
+    $name = Functions\askName();
+    Functions\sayHello($name);
+
+    Functions\runCalcGame($name);
+}
