@@ -15,6 +15,10 @@ namespace Functions;
 use function cli\line;
 use function cli\prompt;
 
+function sayWelcome()
+{
+    line('Welcome to the Brain Games!');
+}
 function askName()
 {
     return prompt('May I have your name?');
@@ -76,6 +80,36 @@ function runCalcGame($name)
             line("Correct!");
         } else {
             line("'%s' is wrong answer ;(. Correct answer was '%s'", $answer, $correctAnswer);
+            line("Let's try again, %s", $name);
+            return;
+        }
+    }
+    line("Congratulations, %s!", $name);
+}
+
+function runGcdGame($name)
+{
+    for ($i = 0; $i < 3; $i++) {
+        $number1 = rand(1, 100);
+        $number2 = rand(1, 100);
+
+        $a = $number1;
+        $b = $number2;
+        while ($a != 0 && $b != 0) {
+            if ($a > $b)
+                $a = $a % $b;
+            else
+                $b = $b % $a;
+        }
+        $nod = $a + $b;
+
+        line("Question: %s %s", $number1, $number2);
+        $answer = \cli\prompt('Your answer');
+
+        if ($answer == $nod) {
+            line("Correct!");
+        } else {
+            line("'%s' is wrong answer ;(. Correct answer was '%s'", $answer, $nod);
             line("Let's try again, %s", $name);
             return;
         }
