@@ -23,14 +23,14 @@ use function cli\line;
  */
 function run()
 {
-    line('Welcome to the Brain Game!');
+    Functions\sayWelcome();
     $name = Functions\askName();
     Functions\sayHello($name);
 }
 
 function runEven()
 {
-    line('Welcome to the Brain Game!');
+    Functions\sayWelcome();
     line('Answer "yes" if number even otherwise answer "no"');
     $name = Functions\askName();
     Functions\sayHello($name);
@@ -40,10 +40,20 @@ function runEven()
 
 function runCalc()
 {
-    line('Welcome to the Brain Games!');
+    Functions\sayWelcome();
     line('What is the result of the expression?');
     $name = Functions\askName();
     Functions\sayHello($name);
 
     Functions\runCalcGame($name);
+}
+
+function runGcd()
+{
+    Functions\sayWelcome();
+    line('Find the greatest common divisor of given numbers.');
+    $name = Functions\askName();
+    Functions\sayHello($name);
+
+    Functions\runGcdGame($name);
 }

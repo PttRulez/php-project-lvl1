@@ -2,7 +2,8 @@
 
 brain-games: https://asciinema.org/a/ygkfcu5NfqSoqIyr1ZIZcvIm7  
 brain-even: https://asciinema.org/a/h1SvUnLDGEEqxEmZfVyqXn7hp  
-brain-calc: https://asciinema.org/a/QF804VIG4zQaEND7mM7nbf11m
+brain-calc: https://asciinema.org/a/QF804VIG4zQaEND7mM7nbf11m  
+brain-gcd: https://asciinema.org/a/ZmJLTGTzZsde2nf91GzFWXPeY
 
 [![Build Status](https://travis-ci.org/PttRulez/php-project-lvl1.svg?branch=master)](https://travis-ci.org/PttRulez/php-project-lvl1)
 
