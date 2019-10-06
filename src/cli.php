@@ -57,3 +57,13 @@ function runGcd()
 
     Functions\runGcdGame($name);
 }
+
+function runProgression()
+{
+    Functions\sayWelcome();
+    line('What number is missing in the progression?');
+    $name = Functions\askName();
+    Functions\sayHello($name);
+
+    Functions\runProgressionGame($name);
+}
