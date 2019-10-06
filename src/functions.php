@@ -149,3 +149,28 @@ function runProgressionGame($name)
     }
     line("Congratulations, %s!", $name);
 }
+
+function runPrimeGame($name)
+{
+    for ($i = 0; $i < 3; $i++) {
+        $number = rand(1, 1000);
+        $d = 2;
+        while ($number % $d != 0) {
+            $d += 1;
+        }
+        $prime = ($d == $number);
+
+        line("Question: %s", $number);
+        $answer = \cli\prompt('Your answer');
+
+        if (($answer == "yes" && $prime == true) || ($answer == "no" && $prime == false)) {
+            line("Correct!");
+        } else {
+            $correctAnswer = ($prime == true) ? 'yes' : 'no';
+            line("'%s' is wrong answer ;(. Correct answer was '%s'", $answer, $correctAnswer);
+            line("Let's try again, %s", $name);
+            return;
+        }
+    }
+    line("Congratulations, %s!", $name);
+}

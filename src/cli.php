@@ -67,3 +67,13 @@ function runProgression()
 
     Functions\runProgressionGame($name);
 }
+
+function runPrime()
+{
+    Functions\sayWelcome();
+    line('Answer "yes" if given number is prime. Otherwise answer "no"');
+    $name = Functions\askName();
+    Functions\sayHello($name);
+
+    Functions\runPrimeGame($name);
+}
