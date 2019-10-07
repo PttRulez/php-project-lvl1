@@ -30,7 +30,12 @@
     "autoload": {
         "files": [
             "src/cli.php",
-            "src/functions.php"
+            "src/functions.php",
+            "src/games/calc.php",
+            "src/games/even.php",
+            "src/games/gcd.php",
+            "src/games/prime.php",
+            "src/games/progression.php"
         ],
         "psr-4": {
             "Php\\Package\\": "src"
