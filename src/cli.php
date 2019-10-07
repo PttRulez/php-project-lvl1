@@ -13,7 +13,7 @@
 namespace BrainGames\Cli;
 
 use Functions;
-
+use Games;
 use function cli\line;
 
 /**
@@ -35,7 +35,7 @@ function runEven()
     $name = Functions\askName();
     Functions\sayHello($name);
 
-    Functions\runEvenGame($name);
+    Functions\runGame('even', $name);
 }
 
 function runCalc()
@@ -45,7 +45,7 @@ function runCalc()
     $name = Functions\askName();
     Functions\sayHello($name);
 
-    Functions\runCalcGame($name);
+    Functions\runGame('calc', $name);
 }
 
 function runGcd()
@@ -55,7 +55,7 @@ function runGcd()
     $name = Functions\askName();
     Functions\sayHello($name);
 
-    Functions\runGcdGame($name);
+    Functions\runGame('gcd', $name);
 }
 
 function runProgression()
@@ -65,7 +65,7 @@ function runProgression()
     $name = Functions\askName();
     Functions\sayHello($name);
 
-    Functions\runProgressionGame($name);
+    Functions\runGame('progression', $name);
 }
 
 function runPrime()
@@ -75,5 +75,5 @@ function runPrime()
     $name = Functions\askName();
     Functions\sayHello($name);
 
-    Functions\runPrimeGame($name);
+    Functions\runGame('prime', $name);
 }
